@@ -430,7 +430,7 @@ private void Construct(){
 	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C4DA517CE7C242409A89A508814F5BBB/ReplaceComment/@EntryValue">Introduce local IDisposable</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C4DA517CE7C242409A89A508814F5BBB/ReplacePattern/@EntryValue">var disposable$method$ = UniRx.Observable&#xD;
 	.Timer(TimeSpan.FromSeconds($time$))&#xD;
-	.Concat(UniRx.Observable.Interval(TimeSpan.FromSeconds($interval$)))&#xD;
+	.Concat(UniRx.Observable.Interval(TimeSpan.FromMinutes($interval$)))&#xD;
 	.Subscribe(_ =&gt; $method$())&#xD;
 	.AddTo(this);</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C4DA517CE7C242409A89A508814F5BBB/SearchPattern/@EntryValue">InvokeRepeating(nameof($method$), $time$, $interval$);</s:String>
